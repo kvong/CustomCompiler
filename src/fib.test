@@ -1,0 +1,34 @@
+program
+	var fib0 .
+	var fib1 .
+	var index .
+	var count .
+	begin
+		let fib0 : 0 , #
+		let fib1 : &1 , #
+		let index : 2 , #
+		scan count , #
+		if [ count < 47 ]
+			if [ count < 47 ]
+				write fib0 ,
+			, 
+		, #
+		if [count < 47 ]
+			write fib1 , 
+		, #
+		if [ count < 47 ]	
+			repeat [ index < count ]
+				begin
+					var tmp .
+					let index : index + 1 , #
+					let tmp : fib0 + fib1 , #
+					let fib0 : fib1 , #
+					let fib1 : tmp , #
+					write fib0 + fib1 , #
+				end
+			,
+		, #
+		if [ count > 46 ]
+			write 1 - 2 ,
+		, #
+	end
