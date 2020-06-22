@@ -19,7 +19,9 @@
 ### To escape from keyboard input:
 * CTRL + D
 
-## Scanner
+# Components
+
+## 1. Scanner
 * Scanner with one look ahead that return a single token and its type.
 
 ### Lexical Definitions
@@ -51,7 +53,7 @@ Operators and delimiters group
 * Filter 2:
     * If token is an identifyer, then check to see if it's a keyword.
 
-## Parser
+## 2. Parser
 * Parser is responsible for creating a tree of the tokens created from the scanner. The structure of the tree is based on the structure of the code block given in the input.
 
 ### BNF Grammar
@@ -73,10 +75,10 @@ Operators and delimiters group
 
 ```
 
-## Static Semantics
+## 3. Static Semantics
 * Traverse the tree created by the parser to verify that the semantic is correct.
 
-## Code Generation
+## 4. Code Generation
 * After we verify that everything is correct and there are no syntax errors, generate the code.
 Grammar Semantics
 * Program executes sequentially from beginning to end, one statement at a time
