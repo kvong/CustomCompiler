@@ -1,25 +1,25 @@
 # Custom Compiler
 
-### Description: 
+**Description:**
 * Compiles UMSL's custom .asm file using a custom high-level language as input(stdin/input.file). Detailed notes are provided below.
 
-### How to compile:
+**How to compile:**
 * Go to `./src` directory.
 * Run `make`.
 
-### How to run:
+**How to run:**
 1 `cd src/`
 2 Run `compile [file]` to translate our language to machine code.
 3 Run `vm [outputfile]` and observe the outout of the machine code.
 
-### Location of generated '.asm' file:
+**Location of generated '.asm' file:**
 * Location of .asm file is where the input file is given.
 * STDIN will generate .asm file in current directory.
 
-### To escape from keyboard input:
+**To escape from keyboard input:**
 * CTRL + D
 
-# Components
+# How it works
 
 ## 1. Scanner
 * Scanner with one look ahead that return a single token and its type.
